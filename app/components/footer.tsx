@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -82,31 +82,21 @@ export default function Footer() {
           <div className="flex gap-4 text-xl">
 
             <a
-              href="#"
-              className="hover:text-cyan-400 transition"
-            >
-              <FaFacebook />
-            </a>
-
-            <a
-              href="#"
-              className="hover:text-cyan-400 transition"
+              href="https://www.instagram.com/next_gen_crafter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 hover:scale-110 transition"
             >
               <FaInstagram />
             </a>
 
             <a
-              href="#"
-              className="hover:text-cyan-400 transition"
+              href="https://www.linkedin.com/in/nextgencrafter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-cyan-400 hover:scale-110 transition"
             >
               <FaLinkedin />
-            </a>
-
-            <a
-              href="#"
-              className="hover:text-cyan-400 transition"
-            >
-              <FaGithub />
             </a>
 
           </div>

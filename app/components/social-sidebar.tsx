@@ -18,7 +18,7 @@ export default function SocialSidebar() {
 
       {/* LinkedIn */}
       <Link
-        href="#"
+        href="https://www.linkedin.com/in/nextgencrafter/"
         target="_blank"
         className="flex items-center justify-center w-11 h-11 border border-cyan-400 rounded-full hover:bg-cyan-400/20 transition"
       >
@@ -27,7 +27,7 @@ export default function SocialSidebar() {
 
       {/* Instagram */}
       <Link
-        href="#"
+        href="https://www.instagram.com/next_gen_crafter/"
         target="_blank"
         className="flex items-center justify-center w-11 h-11 border border-cyan-400 rounded-full hover:bg-cyan-400/20 transition"
       >
