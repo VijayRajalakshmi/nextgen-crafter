@@ -50,12 +50,6 @@ export default function Footer() {
             </li>
 
             <li>
-              <Link href="/projects" className="hover:text-cyan-400 transition">
-                Projects
-              </Link>
-            </li>
-
-            <li>
               <Link href="/contact" className="hover:text-cyan-400 transition">
                 Contact
               </Link>

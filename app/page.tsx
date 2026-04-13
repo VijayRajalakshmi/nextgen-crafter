@@ -5,7 +5,6 @@ import Animations from "./components/animations";
 import Process from "./components/process";
 import Capabilities from "./components/capabilities";
 import Stats from "./components/stats";
-import Portfolio from "./components/portfolio";
 import Clients from "./components/clients";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
       <Animations />
       <Capabilities />
       <Services />
-      <Portfolio />
       <Process />
       <Testimonials />
     </main>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const team = [
-  { name: "Vijay R", role: "Founder", image: "/team/vijay.jpg" },
+  { name: "Vijay R", role: "Founder", image: "/team/Vijay.jpg" },
   { name: "Lavanya G", role: "Director", image: "/team/Lava_PP.jpeg" },
   { name: "Binu Pravin", role: "Director", image: "/team/binu.jpg" },
   { name: "Ponnilavan", role: "Frontend Developer", image: "/team/GVMPP.jpeg" },
@@ -15,7 +15,6 @@ const team = [
 export default function AboutPage() {
   return (
     <section className="bg-black text-white">
-
       {/* HERO */}
       <div className="max-w-6xl mx-auto px-6 py-28 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-cyan-400">
@@ -42,7 +41,10 @@ export default function AboutPage() {
 
           <p className="text-gray-400 mb-4">
             While officially launched recently, our team brings over
-            <span className="text-cyan-400 font-semibold"> 7+ years of experience </span>
+            <span className="text-cyan-400 font-semibold">
+              {" "}
+              7+ years of experience{" "}
+            </span>
             across multiple domains including web development, system
             architecture, cybersecurity, and automation.
           </p>
@@ -68,12 +70,9 @@ export default function AboutPage() {
 
       {/* WHAT WE DO */}
       <div className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-center mb-16">
-          What We Do
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-16">What We Do</h2>
 
         <div className="grid md:grid-cols-3 gap-10">
-
           <div className="border border-cyan-500/30 p-8 rounded-xl">
             <h4 className="text-cyan-400 font-semibold mb-3">
               Web & App Development
@@ -103,13 +102,11 @@ export default function AboutPage() {
               businesses operate efficiently and safely.
             </p>
           </div>
-
         </div>
       </div>
 
       {/* WHY CHOOSE US */}
       <div className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12">
-
         <div>
           <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
 
@@ -123,9 +120,7 @@ export default function AboutPage() {
         </div>
 
         <div className="border border-cyan-500/30 p-8 rounded-xl bg-[#0a0a0a]">
-          <h3 className="text-cyan-400 font-semibold mb-4">
-            Our Vision
-          </h3>
+          <h3 className="text-cyan-400 font-semibold mb-4">Our Vision</h3>
 
           <p className="text-gray-400">
             To become a leading digital solutions company helping businesses
@@ -133,49 +128,46 @@ export default function AboutPage() {
             innovative systems.
           </p>
         </div>
-
       </div>
 
       {/* TEAM */}
+      {/* TEAM */}
       <div className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-3xl font-bold text-center mb-16">Meet Our Team</h2>
 
-        <h2 className="text-3xl font-bold text-center mb-16">
-          Meet Our Team
-        </h2>
-
-        <div className="space-y-12">
-
+        <div className="grid md:grid-cols-2 gap-10">
           {team.map((member, i) => (
-            <div
+            <motion.div
               key={i}
-              className={`flex flex-col md:flex-row items-center gap-8 ${
-                i % 2 !== 0 ? "md:flex-row-reverse" : ""
-              }`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="flex flex-col md:flex-row gap-6 items-center border border-cyan-500/20 rounded-xl p-6 bg-[#0a0a0a] hover:border-cyan-400 transition"
             >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-36 h-36 rounded-full object-cover border-4 border-cyan-400"
-              />
+              {/* IMAGE */}
+              <div className="w-40 h-auto flex-shrink-0">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-auto object-contain rounded-lg border border-cyan-400/30"
+                />
+              </div>
 
+              {/* TEXT */}
               <div className="text-center md:text-left">
-                <h3 className="text-2xl text-cyan-400 font-semibold">
+                <h3 className="text-xl text-cyan-400 font-semibold">
                   {member.name}
                 </h3>
-                <p className="text-gray-400">{member.role}</p>
+
+                <p className="text-gray-400 mt-2 text-sm">{member.role}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-
         </div>
-
       </div>
-
       {/* CTA */}
       <div className="text-center py-24 border-t border-gray-800">
-        <h2 className="text-3xl font-bold">
-          Ready to Grow Your Business?
-        </h2>
+        <h2 className="text-3xl font-bold">Ready to Grow Your Business?</h2>
 
         <p className="text-gray-400 mt-4">
           Let’s build powerful digital systems that drive real results.
@@ -185,7 +177,6 @@ export default function AboutPage() {
           Start a Project
         </button>
       </div>
-
     </section>
   );
 }
