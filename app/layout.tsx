@@ -7,17 +7,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nextgencrafter.in"),
-
   title: {
     default: "Next Gen Crafter | Web Development & Technology Solutions",
     template: "%s | Next Gen Crafter",
   },
-
   description:
     "Next Gen Crafter is a technology solutions company specializing in web development, cybersecurity, digital infrastructure, and scalable software systems.",
-
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 

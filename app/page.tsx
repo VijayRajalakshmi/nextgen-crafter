@@ -8,7 +8,6 @@ import Stats from "./components/stats";
 import Portfolio from "./components/portfolio";
 import Clients from "./components/clients";
 
-
 export default function Home() {
   return (
     <main>
