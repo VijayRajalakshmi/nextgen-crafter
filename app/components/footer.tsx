@@ -14,12 +14,16 @@ export default function Footer() {
           </h2>
 
           <p className="mt-3 text-sm text-gray-500 leading-relaxed">
-            Crafting modern digital solutions for businesses through
-            innovation, security, and scalable technology.
+            Next Gen Crafter is a web development and digital solutions company in Chennai,
+            specializing in website development, SEO, automation systems, and cybersecurity services.
           </p>
 
           <p className="mt-4 text-sm text-gray-600">
-            Craft. Create. Conquer.
+            📍 Chennai, Tamil Nadu
+          </p>
+
+          <p className="mt-2 text-sm text-gray-600">
+            📞 +91 88381 71655
           </p>
         </div>
 
@@ -30,46 +34,41 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-2 text-sm">
-
             <li>
               <Link href="/" className="hover:text-cyan-400 transition">
                 Home
               </Link>
             </li>
-
             <li>
               <Link href="/about" className="hover:text-cyan-400 transition">
-                About
+                About Us
               </Link>
             </li>
-
             <li>
               <Link href="/services" className="hover:text-cyan-400 transition">
                 Services
               </Link>
             </li>
-
             <li>
               <Link href="/contact" className="hover:text-cyan-400 transition">
                 Contact
               </Link>
             </li>
-
           </ul>
         </div>
 
         {/* Services */}
         <div>
           <h3 className="text-white font-semibold mb-4">
-            Services
+            Our Services
           </h3>
 
           <ul className="space-y-2 text-sm">
-            <li>Web Development</li>
+            <li>Website Development in Chennai</li>
+            <li>SEO & Digital Marketing</li>
             <li>Mobile App Development</li>
-            <li>Cyber Security</li>
-            <li>Automation Systems</li>
-            <li>IT Consulting</li>
+            <li>Cyber Security Services</li>
+            <li>Automation Solutions</li>
           </ul>
         </div>
 
@@ -102,7 +101,7 @@ export default function Footer() {
           </div>
 
           <p className="text-sm mt-4 text-gray-500">
-            Follow us for updates and innovations.
+            Follow us for updates, projects, and growth strategies.
           </p>
         </div>
 
